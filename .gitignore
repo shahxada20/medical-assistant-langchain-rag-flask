@@ -2,6 +2,10 @@
 commands.sh
 project_template.sh
 
+# directories
+agents/
+skills/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
