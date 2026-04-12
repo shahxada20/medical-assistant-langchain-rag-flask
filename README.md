@@ -17,21 +17,20 @@
 This project is an AI chatbot designed to answer clinical queries. It features a RAG system with a Flask-based web interface to interact with the Retrieval pipeline, which pulls context from a vector database.
 
 # Objective: 🚀
-I built MediAssist to tackle the "hallucination" problem in medical AI. Instead of letting an LLM guess, this system forces the model to look at verified medical literature (Gale Encyclopedia of Medicine) before speaking. 
+I built MediAssist to tackle the hallucination problem in medical AI. Instead of letting an LLM guess, this system forces the model to look at verified medical literature (Gale Encyclopedia of Medicine) before speaking. Its design showcases an end-to-end AI Engineering pipeline: from raw **PDF ingestion** to creation of **vector embeddings** stored in a vector database and serving clinical queries via a live, responsive web-based chat interface.
 
-Its design showcases an end-to-end AI Engineering pipeline: **from raw PDF ingestion** to **embedding context into vector database** and serving clinical queries via a **live and responsive web-based chat interface**.
 
 
 # Tech Stack: 🛠
 
-| Component | Technology | Configuration | Description |
-|-----------|------------|------------------------|---------------|
-| **Embeddings** | HuggingFace | sentence-transformers/all-MiniLM-L6-v2 | a lightweight model that runs efficiently on local hardware during development |
-| **LLM Provider** | Groq API | Llama 4 Scout (17B) | providing a real-time chat experience |
-| **Vector Database** | Pinecone | Serverless, 384 dimensions, cosine similarity | chosen for its ease of scaling without managing local infrastructure |
-| **Orchestration** | LangChain | LCEL | using LCEL (LangChain Expression Language) for modular, readable chains |
-| **Backend Framework** | Flask 3.1 | REST API | A lightweight framework for RESTful API server & template rendering |
-| **Containerization** | Docker | Planned for production deployment | - |
+| Component | Configuration | Description |
+|-----------|---------------|-------------|
+| **Embeddings** | all-MiniLM-L6-v2 | a lightweight model that runs efficiently on local hardware during development |
+| **LLM Provider** | Groq API | providing a real-time chat experience |
+| **Vector Database** | Pinecone | Scalable vector search, Serverless |
+| **Orchestration** | LangChain | using LCEL (LangChain Expression Language) for modular, readable chains |
+| **Backend Framework** | Flask REST API | A lightweight framework for RESTful API server & template rendering |
+| **Containerization** | Docker | Planned for production deployment |
 
 # How it Works: 📖
 
@@ -64,7 +63,7 @@ Create a .env file in the project root and add:
 # Quick Start: ⚡
 #### 1. Clone the repository
 ```bash
-git clone https://github.com/<your-username>/medical-assistant-chatbot.git
+git clone https://github.com/shahxada20/medical-assistant-chatbot.git
 ```
 #### 2. Set up a virtual environment with uv
 ```bash
