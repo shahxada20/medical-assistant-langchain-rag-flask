@@ -9,6 +9,10 @@ skills/
 # Claude setup
 CLAUDE.md
 .claudeignore
+.claude/
+
+# API tests
+test.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
