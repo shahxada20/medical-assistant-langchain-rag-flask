@@ -11,14 +11,20 @@ license: mit
 # MediAssist: Medical RAG Chatbot
 
 [![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
-[![Status](https://img.shields.io/badge/status-active-success.svg)]()
+[![Status](https://img.shields.io/badge/status-live-success.svg)](https://shahxad-medi-assist.hf.space/)
+[![Hugging Face](https://img.shields.io/badge/🤗-Space-yellow)](https://huggingface.co/spaces/shahxad/medi-assist)
 
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
+[![LangChain](https://img.shields.io/badge/LangChain-1c3c3c.svg?logo=langchain&logoColor=white)](#)
+[![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?logo=huggingface&logoColor=000)](#)
 ![Pinecone](https://img.shields.io/badge/Pinecone-272727?style=for-the-badge&logo=pinecone&logoColor=white)
-![Groq](https://img.shields.io/badge/Groq-f55036?style=for-the-badge&logo=groq&logoColor=white)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
+[![Groq](https://img.shields.io/badge/Groq-F55036?logo=groq&logoColor=fff)](#)
+[![uv](https://img.shields.io/badge/uv-261230.svg?logo=uv&logoColor=#de5fe9)](#)
+[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](#)
+[![Flask](https://img.shields.io/badge/Flask-000?logo=flask&logoColor=fff)](#)
+
+
+## 🌐 Live Demo
+**Try it now:** [https://shahxad-medi-assist.hf.space/](https://shahxad-medi-assist.hf.space/)
 
 <img width="1600" height="800" alt="image" src="https://github.com/user-attachments/assets/d0fe29d8-6a21-4a17-a00b-a9300a4c7abd" />
 
@@ -95,13 +101,9 @@ This will:
 ```bash
 python app.py
 ```
-Navigate to http://localhost:5000 to start chatting.
-
 
 # Future Infrastructure Upgradation: ⚙
-- **Deployment**
-- **UX Re-design**
-- **Expand Medical Context**
+- **Responsive UX Re-design**
 - **Health Check Endpoint**: Add `/api/health` for monitoring
 - **Ingestion Endpoint**: Add `/api/ingest` for dynamic PDF upload
 - **Caching Layer**: Redis for query result caching
